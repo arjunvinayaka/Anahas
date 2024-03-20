@@ -2,6 +2,26 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    #fixedImage {
+      position: fixed;
+      bottom: 0px; /* Adjust the distance from the bottom */
+      right: 10px; /* Adjust the distance from the right */
+      z-index: 999; /* Ensure it appears above other elements */
+    }
+  </style>
+
+
+
+
   <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,17 +48,27 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+      <script>
+        var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"WhatsApp Us","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"left","whatsAppNumber":"919538156928","welcomeMessage":"Hey Arjun's Web World, I'm interested in website/app development and digital marketing services. Can we discuss further?","zIndex":999999,"btnColorScheme":"light"};
+        window.onload = () => {
+          _waEmbed(wa_btnSetting);
+        };
+      </script>
 </head>
 
 <body>
+ <!-- Your website content goes here -->
 
+  <!-- Fixed image in the corner -->
+  <img id="fixedImage" src="images/pngwing.com.png" alt="Fixed Image" width="50px">
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
           <a class="navbar-brand" href="#">
-            Anahas
+            Anahas Dance Studio
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
